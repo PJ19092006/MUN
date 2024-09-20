@@ -1,0 +1,222 @@
+<% layout("/layouts/boilerplate") -%>
+<!-- form -->
+<div class="form-container">
+  <h2 class="text-center">INDIVIDUAL REGISTRATION FORM</h2>
+  <form id="munForm" action="/individual" method="post">
+    <div class="row">
+      <!-- Full Name -->
+      <div class="mb-3 col-md-4">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="fullName"
+          name="data[fullName]"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+
+      <!-- Grade -->
+      <div class="mb-3 col-md-4">
+        <label class="form-label">Grade</label>
+        <select class="form-select" id="grade" name="data[grade]" required>
+          <option value="" disabled selected>Select your grade</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+
+      <!-- School Name -->
+      <div class="mb-3 col-md-4">
+        <label for="schoolName" class="form-label">Name of the School</label>
+        <input
+          type="text"
+          class="form-control"
+          id="schoolName"
+          name="data[schoolName]"
+          placeholder="Enter your school name"
+          required
+        />
+      </div>
+    </div>
+    <div class="row">
+      <!-- Date of Birth -->
+      <div class="mb-3 col-md-4">
+        <label for="dob" class="form-label">Date of Birth</label>
+        <input
+          type="date"
+          class="form-control"
+          id="dob"
+          name="data[dob]"
+          required
+        />
+      </div>
+
+      <!-- Contact Number -->
+      <div class="mb-3 col-md-4">
+        <label for="contactNumber" class="form-label">Contact Number</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="contactNumber"
+          name="data[contactNumber]"
+          placeholder="Enter your contact number"
+          required
+        />
+      </div>
+
+      <!-- Email Address -->
+      <div class="mb-3 col-md-4">
+        <label for="emailAddress" class="form-label">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailAddress"
+          name="data[emailAddress]"
+          placeholder="Enter your email address"
+          required
+        />
+      </div>
+    </div>
+    <!-- Previous MUN Experience -->
+    <div class="mb-3">
+      <label for="munExperience" class="form-label"
+        >Previous MUN Experience (Mention awards, if any)</label
+      >
+      <textarea
+        class="form-control"
+        id="munExperience"
+        rows="3"
+        name="data[munExperience]"
+        placeholder="Describe your previous MUN experience"
+        required
+      ></textarea>
+    </div>
+    <div class="row">
+      <!-- Committee Preference 1  -->
+      <div class="mb-3 col-md-6">
+        <label class="form-label">Committee Preference 1</label>
+        <select
+          class="form-select"
+          id="Committee Preference 1"
+          name="data[CommitteePreference1]"
+          required
+        >
+          <option value="" disabled selected>
+            Select your Committee Preference
+          </option>
+          <option value="UNICEF">
+            The United Nations International Children's Emergency Fund (UNICEF)
+          </option>
+          <option value="UNSC">United Nations Security council (UNSC)</option>
+          <option value="WHSR">White House Situation Room (WHSR)</option>
+          <option value="UNGA">United Nations general Assembly (UNGA)</option>
+          <option value="UNHRC">
+            United Nations High Commissioner for Refugees (UNHRC)
+          </option>
+          <option value="CSW">Commission on the Status of Women (CSW)</option>
+          <option value="ODC">
+            United Nations Office on Drugs and Crime (ODC)
+          </option>
+          <option value="AIPPM">All India Political Party Meet (AIPPM)</option>
+          <option value="COPUOS">
+            Committee on the Peaceful Uses of Outer Space (COPUOS)
+          </option>
+          <option value="WHO">World Health Organisation (WHO)</option>
+          <option value="UNEP">
+            United Nations Environment Programme (UNEP)
+          </option>
+        </select>
+      </div>
+      <!-- Committee Preference 2  -->
+      <div class="mb-3 col-md-6">
+        <label class="form-label">Committee Preference 2</label>
+        <select
+          class="form-select"
+          id="CommitteePreference2"
+          name="data[CommitteePreference2]"
+          required
+        >
+          <option value="" disabled selected>
+            Select your Committee Preference
+          </option>
+          <option value="UNICEF">
+            The United Nations International Children's Emergency Fund (UNICEF)
+          </option>
+          <option value="UNSC">United Nations Security council (UNSC)</option>
+          <option value="WHSR">White House Situation Room (WHSR)</option>
+          <option value="UNGA">United Nations general Assembly (UNGA)</option>
+          <option value="UNHRC">
+            United Nations High Commissioner for Refugees (UNHRC)
+          </option>
+          <option value="CSW">Commission on the Status of Women (CSW)</option>
+          <option value="ODC">
+            United Nations Office on Drugs and Crime (ODC)
+          </option>
+          <option value="AIPPM">All India Political Party Meet (AIPPM)</option>
+          <option value="COPUOS">
+            Committee on the Peaceful Uses of Outer Space (COPUOS)
+          </option>
+          <option value="WHO">World Health Organisation (WHO)</option>
+          <option value="UNEP">
+            United Nations Environment Programme (UNEP)
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Portfolio Preference 1 -->
+      <div class="mb-3 col-md-6">
+        <label for="Portfolio Preference 1" class="form-label"
+          >Portfolio Preference 1</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="PortfolioPreference1"
+          name="data[PortfolioPreference1]"
+          placeholder="Enter your Portfolio Preference"
+          required
+        />
+      </div>
+
+      <!-- Portfolio Preference 2 -->
+      <div class="mb-3 col-md-6">
+        <label for="Portfolio Preference 2" class="form-label"
+          >Portfolio Preference 2</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="PortfolioPreference2"
+          name="data[PortfolioPreference2]"
+          placeholder="Enter your Portfolio Preference"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- Agree to Terms -->
+    <div class="form-check mb-3">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="agreeCheckbox"
+        name="data[agreeCheckbox]"
+        required
+      />
+      <label class="form-check-label" for="agreeCheckbox">
+        I agree to the terms and conditions
+      </label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn w-100 reg-btn">Submit</button>
+  </form>
+</div>

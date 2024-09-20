@@ -1,0 +1,191 @@
+<% layout("/layouts/boilerplate") -%>
+<!-- form -->
+<div class="form-container">
+  <h2 class="text-center">SCHOOL REGISTRATION FORM</h2>
+  <form id="munForm">
+    <!-- School Name -->
+    <div class="mb-3">
+      <label for="schoolName" class="form-label">Name of the School</label>
+      <input
+        type="text"
+        class="form-control"
+        id="schoolName"
+        placeholder="Enter your school name"
+        required
+      />
+    </div>
+    <div class="row">
+      <!-- Official E - Mail address of the school. -->
+      <div class="mb-3 col-md-6">
+        <label for="emailAddressofschool" class="form-label"
+          >Official E - Mail address of the school</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="emailAddress"
+          placeholder="Enter Official E - Mail address of the school"
+          required
+        />
+      </div>
+      <!--Official contact number of the school.-->
+      <div class="mb-3 col-md-6">
+        <label for="contactNumber1" class="form-label"
+          >Official contact number of the school</label
+        >
+        <input
+          type="tel"
+          class="form-control"
+          id="contactNumber1"
+          placeholder="Enter Official contact number of the school."
+          required
+        />
+      </div>
+    </div>
+    <!-- Name of the school MUN coordinator(s)-->
+    <div class="mb-3">
+      <label for="fullName" class="form-label"
+        >Name of the school MUN coordinator(s)</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="fullName"
+        placeholder="Enter Name of the school MUN coordinator(s)"
+        required
+      />
+    </div>
+    <!--Contact number(s) of the school MUN coordinator(s)-->
+    <div class="mb-3">
+      <label for="contactNumber2" class="form-label"
+        >Contact number(s) of the school MUN coordinator(s)</label
+      >
+      <input
+        type="tel"
+        class="form-control"
+        id="contactNumber2"
+        placeholder="Enter Contact number(s) of the school MUN coordinator(s)"
+        required
+      />
+    </div>
+    <div class="row">
+      <!-- Name of the Head Delegate -->
+      <div class="mb-3 col-md-6">
+        <label for="fullName2" class="form-label"
+          >Name of the Head Delegate</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="fullName2"
+          placeholder="Enter Name of the Head Delegate"
+          required
+        />
+      </div>
+      <!-- E- Mail address of the Head Delegate -->
+      <div class="mb-3 col-md-6">
+        <label for="emailAddressofhead" class="form-label"
+          >E- Mail address of the Head Delegate</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="emailAddressofhead"
+          placeholder="Enter E- Mail address of the Head Delegate"
+          required
+        />
+      </div>
+    </div>
+    <!-- Details of Delegates (Name, Grade, Contact No., E - Mail address) -->
+    <div class="mb-3">
+      <label for="deldetails" class="form-label"
+        >Details of Delegates (Name, Grade, Contact No., E - Mail
+        address)</label
+      >
+      <textarea
+        class="form-control"
+        id="deldetails"
+        rows="3"
+        placeholder="Enter Details of Delegates (Name, Grade, Contact No., E - Mail address)"
+        required
+      ></textarea>
+    </div>
+    <div class="row">
+      <!-- Committee Preference 1  -->
+      <div class="mb-3 col-md-6">
+        <label class="form-label">Committee Preference </label>
+        <select class="form-select" id="CommitteePreference" required>
+          <option value="" disabled selected>
+            Select your Committee Preference
+          </option>
+          <option
+            value="The United Nations International Children's Emergency Fund (UNICEF)"
+          >
+            The United Nations International Children's Emergency Fund (UNICEF)
+          </option>
+          <option value="United Nations Security council (UNSC)">
+            United Nations Security council (UNSC)
+          </option>
+          <option value="White House Situation Room (WHSR)">
+            White House Situation Room (WHSR)
+          </option>
+          <option value="United Nations general Assembly (UNGA)">
+            United Nations general Assembly (UNGA)
+          </option>
+          <option value="United Nations High Commissioner for Refugees (UNHRC)">
+            United Nations High Commissioner for Refugees (UNHRC)
+          </option>
+          <option value="Commission on the Status of Women (CSW)">
+            Commission on the Status of Women (CSW)
+          </option>
+          <option value="United Nations Office on Drugs and Crime (ODC)">
+            United Nations Office on Drugs and Crime (ODC)
+          </option>
+          <option value="All India Political Party Meet (AIPPM)">
+            All India Political Party Meet (AIPPM)
+          </option>
+          <option
+            value="Committee on the Peaceful Uses of Outer Space (COPUOS)"
+          >
+            Committee on the Peaceful Uses of Outer Space (COPUOS)
+          </option>
+          <option value="World Health Organisation (WHO)">
+            World Health Organisation (WHO)
+          </option>
+          <option value="United Nations Environment Programme (UNEP)">
+            United Nations Environment Programme (UNEP)
+          </option>
+        </select>
+      </div>
+      <!-- Portfolio Preference  -->
+      <div class="mb-3 col-md-6">
+        <label for="Portfolio Preference 1" class="form-label"
+          >Portfolio Preference
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="PortfolioPreference1"
+          placeholder="Enter your Portfolio Preference"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- Agree to Terms -->
+    <div class="form-check mb-3">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="agreeCheckbox"
+        required
+      />
+      <label class="form-check-label" for="agreeCheckbox">
+        I agree to the terms and conditions
+      </label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary w-100 reg-btn">Submit</button>
+  </form>
+</div>
