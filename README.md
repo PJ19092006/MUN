@@ -5,7 +5,7 @@
 <h3>Current Features:</h3>
 <ul>
   <li>Front-end built using HTML, CSS, Bootstrap.</li>
-  <li>Backend powered by Node.js.</li>
+  <li>Backend powered by Node.js and Epress.</li>
   <li>Email functionality handled by Nodemailer (configured with a fake SMTP service such as Ethereal for testing).</li>
   <li><strong>Automatic Committee Allotment</strong>: The system automatically allots committees to delegates based on their preferences.</li>
 </ul>
