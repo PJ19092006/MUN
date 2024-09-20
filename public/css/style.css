@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  text-align: center;
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+.reg-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.navbar-nav a:hover {
+  text-decoration: underline #d4af37;
+}
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: black;
+  color: #d4af37;
+  text-align: left;
+}
+.home {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.container-fluid {
+  width: 45%;
+  padding-left: 3rem;
+}
+.opt {
+  width: 100%;
+}
+.home-text,
+.home-sec {
+  color: #d4af37;
+}
+
+.img-venue {
+  height: 500px;
+  width: 95%;
+  object-fit: cover;
+}
+
+.venue-p {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.venue-fh1 {
+  color: #d4af37;
+  font-weight: 900;
+  font-size: 110px;
+}
+.venue-sh1 {
+  color: #d4af37;
+  font-weight: 900;
+  font-size: 110px;
+  line-height: 30px;
+}
+.reg-sec {
+  background-color: #d4af37;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reg-btn {
+  font-weight: 350;
+  font-size: 24px;
+  border: 1px solid black;
+  padding: 0.5rem 2.2rem;
+  background-color: #d4af37;
+  &:hover {
+    background-color: #d4af37a7;
+  }
+}
+.reg-text {
+  font-size: 40px;
+  font-weight: 350;
+  color: black;
+}
+.reg-subtext {
+  font-size: 11rem;
+  font-weight: 900;
+  color: black;
+}
+.best-img {
+  width: 100%;
+  height: 570px;
+  object-fit: cover;
+}
+.foot-text {
+  padding-left: 2.5rem;
+  text-align: left;
+}
+.foot-text h4 {
+  color: #d4af37;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 20px;
+}
+#gallery {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 6%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 6%;
+  row-gap: 0px;
+  column-gap: 0px;
+  --container-display: grid;
+}
+#gallery h2 {
+  font-weight: 900;
+  padding: 2rem;
+  margin: 0%;
+}
+.card-section {
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  z-index: 1;
+  margin: 77.51px 38.75px 77.51px 38.75px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.card-1 {
+  z-index: 1;
+}
+
+.card-2 {
+  z-index: 2;
+}
+
+.card-3 {
+  z-index: 3;
+}
+/* Content after the cards */
+.content-after-cards {
+  position: relative; /* Reset position */
+  z-index: 3; /* Ensure this content is above the cards */
+  background-color: #000;
+}
+hr {
+  background-color: white;
+  height: 3px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+}
+#countdown div {
+  display: block;
+  margin: 10px;
+}
+.count {
+  font-size: 50px;
+}
+.count-dot {
+  font-size: 50px;
+}
+.count-dot p {
+  margin-bottom: 50px;
+}
+.regpg-btn {
+  border: 1px solid #000;
+  border-radius: 30px;
+  background-color: #0000002c;
+}
+.individual-reg {
+  background-image: url("/images/_DSC0402_edited_edited.jpg");
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.school-reg {
+  background-image: url("/images/_DSC0349-1_edited.jpg");
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ip-reg {
+  background-image: url("/images/_DSC0930_edited.jpg");
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
