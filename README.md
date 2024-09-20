@@ -25,4 +25,5 @@
   <li>User authentication and registration.</li>
   <li>Dynamic committee allotment improvements.</li>
   <li>Event management and scheduling.</li>
+  <li>Optimization for smaller screens.</li>
 </ul>
